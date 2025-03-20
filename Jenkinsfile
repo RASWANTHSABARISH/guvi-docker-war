@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools{
+        maven "maven"
+    }
 
     environment {
         DOCKER_CREDENTIALS = credentials('raswanth')  // Docker Hub Credentials ID
